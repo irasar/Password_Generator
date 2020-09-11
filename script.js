@@ -20,22 +20,24 @@ var numerical = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 
 
-// array with all arrays combined
-var emptyArray = [];
-
-// 
-var passwordArray = [];
-
-//global variables?
+//global variables
 var userChara;
 var ifUpperCase;
 var ifLowerCase;
 var ifSpecial;
 var ifNumber;
-//??
 var userPassword;
 
 function generatePassword() {
+
+
+
+// array with all arrays combined
+var emptyArray = [];
+
+// pass array
+var passwordArray = [];
+
   //asking how long does the user wants pass to be
   var userChara = prompt("How many characters would you like your password to contain?");
   //if pass less than 8 chara
@@ -56,19 +58,19 @@ function generatePassword() {
     //if user clicks OK
     if (ifUpperCase) {
       for (var i = 0; i < upperCase.length; i++) {
-      emptyArray.push(upperCase[i]);
+        emptyArray.push(upperCase[i]);
       }
     }
 
 
-//above one correct b4 i chage all others?
+    //above one correct b4 i chage all others?
 
     //confirm if user wants lowercase
     var ifLowerCase = confirm("Click OK if you would like to include lowercase characters?");
     //if user clicks ok
     if (ifLowerCase) {
       for (var i = 0; i < lowerCase.length; i++) {
-      emptyArray.push(lowerCase[i]);
+        emptyArray.push(lowerCase[i]);
 
       }
 
@@ -81,7 +83,7 @@ function generatePassword() {
     //if user clicks ok
     if (ifSpecial) {
       for (var i = 0; i < specialChar.length; i++) {
-      emptyArray.push(specialChar[i]);
+        emptyArray.push(specialChar[i]);
       }
 
 
@@ -95,7 +97,7 @@ function generatePassword() {
     //if user clicks ok
     if (ifNumber) {
       for (var i = 0; i < numerical.length; i++) {
-      emptyArray.push(numerical[i]);
+        emptyArray.push(numerical[i]);
 
 
 
@@ -105,7 +107,10 @@ function generatePassword() {
     for (var i = 0; i < userChara; i++) {
       //choosing random index from empty array
       passwordArray.push(emptyArray[(Math.floor(Math.random() * emptyArray.length))]);
-    
+    }
+     userPassword = passwordArray.join("");
+     return userPassword;
+
   }
 }
 
@@ -114,17 +119,18 @@ function generatePassword() {
 
 
 
-}
 // Write password to the #password input
+
 function writePassword() {
-  var passwordArray = generatePassword();
+  var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
- //? var output = "";
-
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
 
