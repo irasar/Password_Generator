@@ -28,15 +28,19 @@ var ifSpecial;
 var ifNumber;
 var userPassword;
 
+
+
+
+
 function generatePassword() {
 
 
 
-// array with all arrays combined
-var emptyArray = [];
+  // array with all arrays combined
+  var emptyArray = [];
 
-// pass array
-var passwordArray = [];
+  // pass array
+  var passwordArray = [];
 
   //asking how long does the user wants pass to be
   var userChara = prompt("How many characters would you like your password to contain?");
@@ -63,7 +67,6 @@ var passwordArray = [];
     }
 
 
-    //above one correct b4 i chage all others?
 
     //confirm if user wants lowercase
     var ifLowerCase = confirm("Click OK if you would like to include lowercase characters?");
@@ -107,15 +110,12 @@ var passwordArray = [];
     for (var i = 0; i < userChara; i++) {
       //choosing random index from empty array
       passwordArray.push(emptyArray[(Math.floor(Math.random() * emptyArray.length))]);
-    }
-     userPassword = passwordArray.join("");
-     return userPassword;
+    } // return 
+    userPassword = passwordArray.join("");
+    return userPassword;
 
   }
 }
-
-
-
 
 
 
