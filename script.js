@@ -54,7 +54,7 @@ function generatePassword() {
     //confirm if user wants uppercase 
     var ifUpperCase = confirm("Click OK if you would like to include uppercase characters?");
     //if user clicks OK
-    if (ifUpperCase === true) {
+    if (ifUpperCase) {
       for (var i = 0; i < upperCase.length; i++) {
       emptyArray.push(upperCase[i]);
       }
@@ -66,14 +66,10 @@ function generatePassword() {
     //confirm if user wants lowercase
     var ifLowerCase = confirm("Click OK if you would like to include lowercase characters?");
     //if user clicks ok
-    if (ifLowerCase === true) {
-      emptyArray.push(lowerCase)
-
-
-
+    if (ifLowerCase) {
       for (var i = 0; i < lowerCase.length; i++) {
-        // putting all the stuff from lowerCase array into emptyArray
-        emptyArray.push(lowerCase[i]);
+      emptyArray.push(lowerCase[i]);
+
       }
 
 
@@ -83,15 +79,9 @@ function generatePassword() {
     //confirm if user wants special characters
     var ifSpecial = confirm("Click OK if you would like to include special characters?");
     //if user clicks ok
-    if (ifSpecial === true) {
-      emptyArray.push(ifSpecial)
-
-
-
-
+    if (ifSpecial) {
       for (var i = 0; i < specialChar.length; i++) {
-        // putting all the stuff from specialChar array into emptyArray
-        emptyArray.push(specialChar[i]);
+      emptyArray.push(specialChar[i]);
       }
 
 
@@ -103,33 +93,21 @@ function generatePassword() {
     //confirm if user wants numbers
     var ifNumber = confirm("Click OK if you would like to include numerical characters?");
     //if user clicks ok
-    if (ifNumber === true) {
-      emptyArray.push(ifNumber)
-
-
-
+    if (ifNumber) {
       for (var i = 0; i < numerical.length; i++) {
-        // putting all the stuff from numerical array into emptyArray
-        emptyArray.push(numerical[i]);
-
+      emptyArray.push(numerical[i]);
 
 
 
 
       }
     }
-
+    for (var i = 0; i < userChara; i++) {
+      //choosing random index from empty array
+      passwordArray.push(emptyArray[(Math.floor(Math.random() * emptyArray.length))]);
+    
   }
 }
-
-
-
-// looping to build the array with the password
-for (var i = 0; i < userChara; i++) {
-  //choosing random index from empty array
-  passwordArray.push(emptyArray[(Math.floor(Math.random() * emptyArray.length))]);
-
-
 
 
 
@@ -149,3 +127,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
