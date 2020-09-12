@@ -5,7 +5,7 @@
 ## Description 
 
 
-This project generates a unique, secure password. Upon a button click, the user will be prompted to enter a desired password length between 8 and 129 characters long.The password generated will depend on the users' input.  They will be asked to confirm if they would like to include special characters, lower/uppercase, and/or numerical characters. The project will then generate a secured, unique password.
+This project generates a unique, secure password. Upon a button click, the user will be prompted to enter a desired password length between 8 and 129 characters long. The password generated will depend on the user's input.  They will be asked to confirm if they would like to include special characters, lower/uppercase, and/or numerical characters. The project will then generate a secured, unique password.
 
 
 
