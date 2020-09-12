@@ -15,6 +15,7 @@ This project generates a unique, secure password. The password generated depends
 
 There are no installations required. It will simply open up in a browser window.
 
+  https://irasar.github.io/Password_Generator/
  
 ## Usage 
 ![alt text](/screenshot.png)
