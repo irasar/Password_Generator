@@ -2,16 +2,16 @@
 var generateBtn = document.querySelector("#generate");
 
 
-//array if user wants special characters
+//array of all special characters
 
 var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 
 
 
-//array if user wants capital letters
+//array of all capital letters
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-//array if user wants lower case letters
+//array of all lower case letters
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 
@@ -31,7 +31,7 @@ var userPassword;
 
 
 
-
+//function that generates the pass
 function generatePassword() {
 
 
