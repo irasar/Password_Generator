@@ -42,7 +42,7 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 
 ## Usage 
-![alt text](assets/screenshot.png)
+![alt text](./assets/screenshot.png)
  
 
 
