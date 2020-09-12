@@ -5,7 +5,7 @@
 ## Description 
 
 
-This project generates a unique, secured password. The password generated depends on the users' input. Upon a button click, the user will be prompted to enter a desired for a password length between 8 and 129 charcters long. They will be then asked to confirm if they would like to include special, lower/uppercase, and/or numerical characters. The project will then generate a secured, unique password.
+This project generates a unique, secure password. The password generated depends on the users' input. Upon a button click, the user will be prompted to enter a desired password length between 8 and 129 characters long. They will be then asked to confirm if they would like to include special, lower/uppercase, and/or numerical characters. The project will then generate a secured, unique password.
 
 
 
@@ -13,7 +13,7 @@ This project generates a unique, secured password. The password generated depend
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+There are no installations required. It will simply open up in a browser window.
 
  
 ## Usage 
@@ -39,9 +39,6 @@ https://github.com/DrunkOnMystery
 ## License
 
 GNU General Public License v3.0
-
-
-
 
 
 
