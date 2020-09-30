@@ -18,12 +18,13 @@ There are no installations required. It will simply open up in a browser window.
   https://irasar.github.io/Password_Generator/
  
 ## Usage 
+![alt text](/alert.png)
+![alt text](/err.png)
 ![alt text](/screenshot.png)
- 
-
 
 ## Credits
 
+https://github.com/irasar
 
 Created with help by:
 
