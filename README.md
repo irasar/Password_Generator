@@ -1,6 +1,6 @@
 # Password_Generator
 
-
+  https://irasar.github.io/Password_Generator/
 
 ## Description 
 
@@ -9,13 +9,11 @@ This project generates a unique, secure password. Upon a button click, the user 
 
 
 
-
-
 ## Installation
 
 There are no installations required. It will simply open up in a browser window.
 
-  https://irasar.github.io/Password_Generator/
+
  
 ## Usage 
 ![alt text](/screenshot.png)
